@@ -1,12 +1,84 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/main.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
 </head>
-  <h1 class="text-3xl font-bold underline">
-    Hello world 
-  </h1>
-</body>
+
+<body>
+  <div class="bg-slate-300">
+    <div class="flex h-screen">
+      <!-- nav -->
+      <div class="w-1/5 bg-blue-950 flex flex-col gap-5 pt-3 rounded-r-2xl h-full">
+        <div class="font-bold pb-8 pl-5">Finance</div>
+        <div class="font-bold bg-slate-300 rounded-r-lg p-3 mr-3 pl-5">Overview</div>
+        <div class="font-bold pl-5">Transactions</div>
+        <div class="font-bold pl-5">Budgets</div>
+        <div class="font-bold pl-5">Pots</div>
+        <div class="font-bold pl-5">Recurring Bills</div>
+      </div>
+      <!-- dashboard -->
+      <div class="bg-slate-300 w-full flex flex-col gap-5 px-5 pt-3">
+        <div class="font-bold ">Overview</div>
+        <div class="flex justify-between gap-5">
+          <!--  -->
+          <div class="py-4 pl-4 rounded-lg flex flex-col gap-1 bg-blue-950 text-white w-full">
+            <p class="text-xs">Current Balance</p>
+            <span class="text-xl font-bold">$4,836.00 </span>
+          </div>
+          <div class="py-4 pl-4 rounded-lg flex flex-col gap-1 bg-white w-full">
+            <p class="text-xs">Income</p>
+            <span class="text-xl font-bold">$3,814.25 </span>
+          </div>
+          <div class="py-4 pl-4 rounded-lg flex flex-col gap-1 bg-white w-full">
+            <p class="text-xs">Expenses</p>
+            <span class="text-xl font-bold">$1,700.50 </span>
+          </div>
+        </div>
+        <!--  -->
+        <div class="flex gap-2">
+          <div class="flex flex-col gap-10 w-1/2 ">
+            <!-- Pots -->
+            <div class="h-1/2 bg-white rounded-lg">
+              <div class="flex flex-col gap-5">
+                <!-- head -->
+              <div class="flex px-4">
+                <span class="font-bold w-4/5">
+                  Pots
+                </span>
+                <span class="">See Details</span>
+              </div>
+              <!-- foot -->
+              <div>
+                
+              </div>
+            </div>
+              <!-- <div class="py-4 pl-4 rounded-lg flex flex-col gap-1 bg-white w-full">
+                <p class="text-xs">Total Saved</p>
+                <span class="text-xl font-bold">$850 </span>
+              </div> -->
+            </div>
+            <!-- Transactions -->
+            <div class="bg-black">ghjk</div>
+          </div>
+          <div class="flex flex-col gap-2 w-1/2">
+            <!-- Budgets -->
+            <div class="">jklm</div>
+            <!-- Recurrigs Bills -->
+            <div class="h-1/2 bg-blue-950">ghjk</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </html>
